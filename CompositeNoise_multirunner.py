@@ -13,7 +13,7 @@ def main():
     dnn1_yaml = 'networks/Generator2x50_100_Decay1TestLoss1.035e-06.yml'
     dnn2_yaml = 'networks/Contraster1x50_Decay5TestLoss47.74.yml'
     dnn3_yaml = 'networks/Blurer1x50_Decay10TestLoss47.28.yml'
-    dnn4_yaml = 'networks/CompositeRegressor3x20_20_20_Decay0.001Loss5.15e-06Composite.yml'
+    dnn4_yaml = 'networks/CompositeRegressor3x20_20_20_Decay0.001TestLoss5.15e-06Composite.yml'
     dnn5_yaml = 'networks/ControllerSigmoid16x16.yml'
     args = sys.argv[1:]
     
