@@ -44,10 +44,11 @@ def main():
     
     end_str = str(end_val)
     
-    output_path = 'output_single_noise_'+ noise_type_str+ '_' +int_str+'_' + start_str + '_' + end_str
+    output_path = 'output/output_single_noise_'+ noise_type_str+ '_' +int_str+'_' + start_str + '_' + end_str
+    
 
     if not os.path.exists(output_path):
-        os.mkdir(output_path)
+        os.makedirs(output_path)
 
 
     legend = ['X1_LOWER', 'X1_UPPER']
@@ -84,7 +85,7 @@ def evaluate_conditions(conditions, legend, model, output_path, flowstar_path, d
     for i in range(len(legend)):
         test_model = test_model.replace(legend[i], str(conditions[i]))
 
-    with open(output_path + '/' + str(conditions[0]) + ', ' + str(conditions[1]) + '.txt', 'w') as f:
+    with open(output_path + '/' +'Interval'+ str(conditions[0]) + ', ' + str(conditions[1]) + '.txt', 'w') as f:
         subprocess.run(flowstar_path + ' ' + dnn1_yaml + ' ' + dnn2_yaml + ' ' + dnn3_yaml + ' ' + dnn4_yaml, input=test_model, shell=True, universal_newlines=True, stdout=f)
     print('Finished Interval: [' + str(conditions[0]) + ', ' + str(conditions[1]) + ']')
 #===========================================================================================
