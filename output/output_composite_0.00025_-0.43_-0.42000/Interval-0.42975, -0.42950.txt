@@ -1,0 +1,15 @@
+
+Computation completed: 1829 flowpipe(s) computed.
+
+[1mResult of the safety verification on the computed flowpipes: [0m[1m[32mSAFE
+
+[0mTotal time cost:[1m 50118.308418[0m seconds.
+
+total branches: 1
+dnn runtime: 26494.496094
+
+Initial conditions:
+[-0.429750, -0.429500]
+[0.000000, 0.000000]
+[0.500000, 2.000000]
+[-0.000000, 0.150000]
