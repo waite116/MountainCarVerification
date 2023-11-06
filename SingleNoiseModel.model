@@ -7504,7 +7504,7 @@ hybrid reachability
 		mode2
 		{
 			x1 in [X1_LOWER, X1_UPPER]
-			x3 in [.3, 2]
+			x3 in [0, .3]
 			x2 in [0, 0]
 			reward in [0, 0]
 		}
